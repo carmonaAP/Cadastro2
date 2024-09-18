@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Tarefa</title>
+    <link rel="stylesheet" href="StyleTarefa.css">
+    <link rel="icon" href="img/download.gif" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="#home">Home</a></li>
+               
+                <li class="dropdown">
+                    <a href="#servicos" class="dropbtn">Tarefas</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#Criar">Criar </a></li>
+                        <li><a href="#Ler">Ler </a></li>
+                        <li><a href="#Atualizar">Atualizar </a></li>
+                        <li><a href="#Deletar">Deletar </a></li>
+                    </ul>
+                </li>
+                <li><a href="Responsavel.html">Responsável</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <div class="form">
+      <center>  <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9afJ0geQpzDxErLjmR5izx7ILMwVYVfT4Q&s" alt=""></a></center>
+        <h2 id="heading">Cadastro da Tarefa</h2><br>
+        <form action="/Tarefa" method="POST">
+           
+            <div class="field">
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome da tarefa" required>
+            </div>
+
+           
+            <div class="field">
+                <textarea id="descricao" name="descricao" placeholder="Descreva a tarefa" rows="4" required></textarea>
+            </div>
+
+            
+            <div class="field">
+                <input type="date" id="data_entrega" name="data_entrega" required>
+            </div>
+
+           
+            <div class="field">
+                <select id="responsavel" name="responsavel_id" required>
+                    <option value="">Selecione o responsável</option>
+                    <option value="1">João Silva</option>
+                    <option value="2">Maria Souza</option>
+                    <option value="3">Pedro Santos</option>
+                    
+                </select><br>
+                <a href="#" class="add-responsavel">Adicionar novo responsável</a>
+            </div>
+
+            <div class="field">
+                <label for="status">Status:</label><br>
+                <select id="status" name="status">
+                    <option value="incompleta">Incompleta</option>
+                    <option value="completa">Completa</option>
+                </select>
+            </div><br>
+
+           
+            <div class="field">
+            <button class="button3" type="submit">Salvar</button>
+               
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Programado por uma pessoa iniciante</p>
+            </div>
+
+
+
+
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: empresaresponsavel@gmail.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua Saudade, 123, Campinas,SP.</p>
+            </div>
+
+
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a><BR>
+                </div>
+        </div>
+    </div><br>
+
+
+       <center> <div class="footer-bottom">
+            <p>&copy; 2024 Empresa. Todos os direitos
+                reservados.</p>
+        </div></center>
+   
+    </footer>
+
+</body>
+</html>
